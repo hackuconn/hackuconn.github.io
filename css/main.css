@@ -35,12 +35,12 @@ h1, h2, h3, h4{
 	color: white;
 }
 
-.cardblue::selection {
-	background: white;
-}
-
 .getinvolved {
 	padding-top: 30px;
+}
+
+.getinvolved::selection {
+	background: white;
 }
 
 .centeredtext {
@@ -51,6 +51,10 @@ h1, h2, h3, h4{
 	padding-top: 20px;
 	padding-bottom: 20px;
 	margin-bottom: 20px;
+}
+
+.ready::selection {
+	background: white;
 }
 
 .btnxp {
