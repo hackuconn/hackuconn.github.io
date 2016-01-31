@@ -35,6 +35,10 @@ h1, h2, h3, h4{
 	color: white;
 }
 
+.cardblue::selection {
+	background: white;
+}
+
 .getinvolved {
 	padding-top: 30px;
 }
