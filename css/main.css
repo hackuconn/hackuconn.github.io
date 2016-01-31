@@ -1,0 +1,74 @@
+@font-face {
+    font-family: uconnfont;
+    src: url(../fonts/uconn.otf);
+}
+
+h1, h2, h3, h4{
+	font-family: 'Montserrat', sans-serif;
+}
+
+.navlogo {
+	font-family: 'uconnfont';
+	font-size: 2em;
+	margin-top: 3px;
+}
+
+.header {
+	margin-top: 50px;
+}
+
+.cardwhite {
+	margin-bottom: 40px;
+}
+
+.cardblue {
+	background: #40c4ff;
+	padding-bottom: 50px;
+	color: white;
+}
+
+.getinvolved {
+	padding-top: 30px;
+}
+
+.centeredtext {
+	text-align: center;
+}
+
+.ready {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+}
+
+.btnxp {
+	background: #00B0FF !important;
+	border-color: #00B0FF !important;
+	color: white !important;
+}
+
+.btnxp:hover {
+	background: #0091EA !important;
+	border-color: #0091EA !important;
+}
+
+.footer {
+	background: #1e1e1e;
+	color: gray;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+.footerlink {
+	text-decoration: none;
+	color: gray;
+}
+
+.footerlink:hover {
+	text-decoration: none;
+	color: white;
+}
+
+.right {
+	text-align: right;
+}
