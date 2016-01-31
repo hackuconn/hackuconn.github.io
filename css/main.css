@@ -82,3 +82,10 @@ h1, h2, h3, h4{
 .right {
 	text-align: right;
 }
+
+@media only screen and (max-width: 480px) {
+	.footer {
+		text-align: center;
+	}
+	
+}
