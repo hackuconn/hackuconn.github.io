@@ -30,13 +30,16 @@ h1, h2, h3, h4{
 }
 
 .cardblue {
-	background: #40c4ff;
+	background: url(../img/cityscape.png) #40c4ff;
+	background-size: cover;
 	padding-bottom: 50px;
 	color: white;
+	min-height: 400px;
 }
 
 .getinvolved {
 	padding-top: 30px;
+	text-shadow: rgb(90, 90, 90) 0px 0px 3px;
 }
 
 .getinvolved::selection {
@@ -48,9 +51,8 @@ h1, h2, h3, h4{
 }
 
 .ready {
-	padding-top: 20px;
-	padding-bottom: 20px;
-	margin-bottom: 20px;
+	font-size: 1.2em;
+	text-shadow: rgb(90, 90, 90) 0px 0px 3px;
 }
 
 .ready::selection {
