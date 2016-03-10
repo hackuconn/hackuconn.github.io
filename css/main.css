@@ -13,6 +13,14 @@ h1, h2, h3, h4{
 	margin-top: 3px;
 }
 
+.navlogo:hover {
+	color: #777 !important;
+}
+
+.hack {
+	color: #00B0FF;
+}
+
 .navpadding {
 	padding-right: 0px !important;
 }
