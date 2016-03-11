@@ -8,9 +8,9 @@ h1, h2, h3, h4{
 }
 
 .navlogo {
-	font-family: 'uconnfont';
+	font-family: 'Roboto Slab', serif;
 	font-size: 2em;
-	margin-top: 3px;
+	font-weight: 700;
 }
 
 .navlogo:hover {
