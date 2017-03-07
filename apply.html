@@ -24,6 +24,19 @@
 
 			ga('create', 'UA-93169123-1', 'auto');
 			ga('send', 'pageview');
+
+			ga(function(){
+				gal = function(el) {
+					var url = el.getAttribute('href')
+					ga('send', 'event', 'outbound', 'click', url, {
+						'transport': 'beacon',
+						'hitCallback': function(){
+							document.location = url
+						}
+					})
+					return false
+				}
+			})
 		</script>
 	</head>
   
@@ -91,8 +104,8 @@
 						&copy;2016 UConn Entrepreneurship and Innovation Society
 					</div>
 					<div class="col-md-6 right">
-						<a href="http://static.mlh.io/docs/mlh-code-of-conduct.pdf" class="footerlink" target="_blank" style="margin-right: 20px;">Code of Conduct</a>
-						<a href="mailto:hackuconn@gmail.com?Subject=Hack%20UConn%202017" class="footerlink">Contact</a>
+						<a href="http://static.mlh.io/docs/mlh-code-of-conduct.pdf" class="footerlink" target="_blank" style="margin-right: 20px;" onclick="if(gal) return gal(this);">Code of Conduct</a>
+						<a href="mailto:hackuconn@gmail.com?Subject=Hack%20UConn%202017" class="footerlink" onclick="if(gal) return gal(this);">Contact</a>
 					</div>
 				</div>
 			</div>
