@@ -3,6 +3,24 @@
     src: url(../fonts/uconn.otf);
 }
 
+/* Bold the apply button in the menu bar*/
+ul.nav a[href="apply"] {
+	font-weight: bold;
+}
+
+/* Position the button */
+h1 a.btn {
+	vertical-align: middle;
+}
+
+/* On mobile, the button stretches the full page size */
+@media screen and (max-width: 500px) {
+	h1 a.btn {
+		display: block;
+		margin: 1em 0em;
+	}
+}
+
 a {
   cursor: pointer;
 }

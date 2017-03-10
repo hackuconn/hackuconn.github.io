@@ -27,9 +27,10 @@
 			ga('send', 'pageview');
 
 			ga(function(){
-				gal = function(el) {
+				gal = function(el, l) {
+					l = l || ''
 					var url = el.getAttribute('href')
-					ga('send', 'event', 'outbound', 'click', url, {
+					ga('send', 'event', 'outbound', 'click', l + ':' + url, {
 						'transport': 'beacon',
 						'hitCallback': function(){
 							document.location = url
@@ -64,10 +65,10 @@
 		    <!-- Collect the nav links, forms, and other content for toggling -->
 		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		      <ul class="nav navbar-nav navbar-right">
-  		      <li><a href="apply">Apply</a></li>
 			      <li><a href="faq">FAQ</a></li>
 		        <li><a href="schedule">Schedule</a></li>
 		        <li><a href="sponsor">Sponsors</a></li>
+						<li><a href="apply" onclick="if(gal) gal(this, 'header')">Apply Now</a></li>
 		        <!-- <li class="dropdown">
 		          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Information<span class="caret"></span></a>
 		          <ul class="dropdown-menu">
@@ -132,7 +133,7 @@
 		<header>
 			<div class="jumbotron">
 				<div class="container">
-					<h1>March 24-25, 2017</h1>
+					<h1>March 24-25, 2017 <a class="btn btn-default btn-lg btnxp" href="apply" onclick="if(gal) gal(this, 'cta')">Apply Now</a></h1>
 					<p>Join us at the second annual HackUConn event for a fast-paced 24 hour initiative to push the boundaries of creativity and innovation. Organized and hosted by the UConn Entrepreneurship and Innovation Society, this event will place you in the setting to work with like-minded innovators and mentors to synthesize an idea and develop it into a product over the course of the weekend! Our theme for this year is <strong>Allergy Risk: Helping Millions Survive and Thrive</strong>.</p>
 				</div>
 			</div>
@@ -157,7 +158,7 @@
 					<div class="col-md-5">
 						<h2 class="getinvolved">Get Involved</h2>
 						<p class="ready">Ready to jump in? Our application for HackUConn 2017 <em><strong>Allergy Risk: Helping Millions Survive and Thrive</strong></em> is open! Apply now to participate and get important updates for the event.</p>
-						<a class="btn btn-default btn-lg" href="apply">Apply</a>
+						<a class="btn btn-default btn-lg" href="apply" onclick="if(gal) gal(this, 'original')">Apply</a>
 					</div>
 				</div>
 			</div>
